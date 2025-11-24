@@ -1,0 +1,48 @@
+<section class="property-details-page">
+    <div class="container">
+        <div id="propertyDetailsContainer">
+            <div class="loading-spinner">Loading property details...</div>
+        </div>
+        
+        <div class="reviews-section" id="reviewsSection">
+            <h2>Property Reviews</h2>
+            <div class="reviews-container" id="reviewsContainer">
+                <!-- Reviews will be loaded dynamically -->
+            </div>
+            
+            <div class="add-review-section">
+                <h3>Add Your Review</h3>
+                <form id="reviewForm" class="review-form">
+                    <input type="hidden" id="reviewPropertyId" value="{{propertyId}}">
+                    <div class="form-group">
+                        <label for="reviewName">Your Name</label>
+                        <input type="text" id="reviewName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewEmail">Your Email</label>
+                        <input type="email" id="reviewEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewRating">Rating</label>
+                        <select id="reviewRating" required>
+                            <option value="">Select Rating</option>
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Very Good</option>
+                            <option value="3">3 - Good</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="1">1 - Poor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewComment">Your Review</label>
+                        <textarea id="reviewComment" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/js/property-details.js"></script>
+

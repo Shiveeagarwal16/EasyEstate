@@ -1,0 +1,55 @@
+
+{{> header}}
+
+<section style="padding: 5rem 0; text-align: center; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+    <div class="container">
+        <div style="max-width: 600px; margin: 0 auto;">
+
+            <div style="font-size: 8rem; margin-bottom: 1rem;">
+                {{#if (eq error.status 404)}}🏚️{{else}}⚠️{{/if}}
+            </div>
+            
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; color: #667eea;">
+                {{#if (eq error.status 404)}}404 - Page Not Found{{else}}Oops! Something Went Wrong{{/if}}
+            </h1>
+            
+            <p style="font-size: 1.2rem; color: #636e72; margin-bottom: 2rem;">
+                {{#if message}}{{message}}{{else}}The page you are looking for does not exist{{/if}}
+            </p>
+            
+            {{#if error.stack}}
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; text-align: left;">
+                    <h3 style="color: #e74c3c; margin-bottom: 1rem;">Error Details (Development Mode)</h3>
+                    <pre style="overflow-x: auto; font-size: 0.9rem; color: #2d3436;">{{error.stack}}</pre>
+                </div>
+            {{/if}}
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/" class="btn btn-primary">
+                    🏠 Go to Homepage
+                </a>
+                <a href="/contact" class="btn btn-secondary">
+                    📧 Contact Support
+                </a>
+                <button onclick="history.back()" class="btn btn-accent">
+                    ← Go Back
+                </button>
+            </div>
+            
+            <div style="margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white;">
+                <h3 style="color: white; margin-bottom: 1rem;">Need Help?</h3>
+                <p style="margin-bottom: 1rem; opacity: 0.9;">
+                    Try these quick links to find what you're looking for:
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+                    <a href="/listings" style="color: white; text-decoration: underline;">Browse Properties</a>
+                    <a href="/gallery" style="color: white; text-decoration: underline;">View Gallery</a>
+                    <a href="/contact" style="color: white; text-decoration: underline;">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{> footer}}

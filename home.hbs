@@ -1,0 +1,149 @@
+<section class="hero-section">
+    <div class="hero-slider" id="heroSlider">
+        <div class="hero-slide active">
+            <div class="hero-content">
+                <h1>Find Your Dream Home</h1>
+                <p>Discover premium properties in the most desirable locations</p>
+                <a href="/listings" class="btn btn-primary">Explore Properties</a>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Luxury Living Awaits</h1>
+                <p>Experience elegance and comfort in every detail</p>
+                <a href="/listings" class="btn btn-primary">View Listings</a>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Your Perfect Investment</h1>
+                <p>Smart choices for a secure future</p>
+                <a href="/listings" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div class="slider-controls">
+        <button class="slider-btn prev" id="prevSlide">‹</button>
+        <button class="slider-btn next" id="nextSlide">›</button>
+    </div>
+    <div class="slider-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+    </div>
+</section>
+
+<section class="search-section">
+    <div class="container">
+        <div class="search-box">
+            <h2>Search Properties</h2>
+            <form id="quickSearchForm" class="search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="searchCity">City</label>
+                        <input type="text" id="searchCity" placeholder="Enter city">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchType">Property Type</label>
+                        <select id="searchType">
+                            <option value="">All Types</option>
+                            <option value="House">House</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Condo">Condo</option>
+                            <option value="Townhouse">Townhouse</option>
+                            <option value="Villa">Villa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="searchPrice">Max Price</label>
+                        <input type="number" id="searchPrice" placeholder="Max price">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchBedrooms">Bedrooms</label>
+                        <select id="searchBedrooms">
+                            <option value="">Any</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="featured-properties">
+    <div class="container">
+        <h2 class="section-title">Featured Properties</h2>
+        <div class="properties-grid" id="featuredProperties">
+            <!-- Properties will be loaded dynamically -->
+        </div>
+    </div>
+</section>
+
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="500">0</h3>
+                <p>Properties Listed</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="1200">0</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="50">0</h3>
+                <p>Expert Agents</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="15">0</h3>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials-slider" id="testimonialsSlider">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"Premium Estate helped us find our perfect home. The service was exceptional and the team was very professional."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Johnson</strong>
+                        <span>Home Buyer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"We sold our property quickly and at a great price. Highly recommend their services!"</p>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong>
+                        <span>Property Seller</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"The best real estate agency in town. They understand your needs and deliver results."</p>
+                    <div class="testimonial-author">
+                        <strong>Emily Davis</strong>
+                        <span>Investor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/js/home.js"></script>
+
